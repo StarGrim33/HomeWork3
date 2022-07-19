@@ -15,18 +15,10 @@ namespace JuniorHomeWork
                 Console.Write(numbers[i] + ",");
             }
 
-            for (int i = 0; i < 1; i++)
-            {
-
                 if (numbers[0] > numbers[1])
                 {
                     Console.WriteLine("\nКрайний максимум" + numbers[0]);
                 }
-                else
-                {
-                    break;
-                }
-            }
 
             for (int i = 1; i < numbers.Length; i++)
             {
