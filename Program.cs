@@ -20,13 +20,20 @@ namespace JuniorHomeWork
                     Console.WriteLine("\nКрайний максимум" + numbers[0]);
                 }
 
-            for (int i = 1; i < numbers.Length; i++)
+
+            for (int i = 1; i < numbers.Length-1; i++)
             {
+
                 if (numbers[i-1] < numbers[i] && numbers[i] > numbers[i+1])
                 {
                     Console.WriteLine("\nКрайний максимум" + numbers[i]);
                 }
-                
+          
+            }
+
+            if (numbers[numbers.Length - 2] < numbers[numbers.Length - 1])
+            {
+                Console.WriteLine("\nКрайний максимум" + numbers[numbers.Length - 1]);
             }
         }
 
